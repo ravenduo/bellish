@@ -1,0 +1,9 @@
+<template name="bookingList">
+  <div class="bookings">
+    <!--Remove the name of the business  -->
+    <h2>"Business Name's"{{businessName}} Appointments</h2>
+    {{#each bookings}}
+      {{> bookingSlot}}
+    {{/each}}
+  </div>
+</template>
