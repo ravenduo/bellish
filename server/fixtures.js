@@ -1,19 +1,22 @@
 if (Bookings.find().count() === 0) {
   Bookings.insert({
-    date: '2014-12-17',
-    time: '7pm',
-    service: 'Manicure'
+    bookingDate: '12/03/2014',
+    bookingTime: '7pm',
+    service: 'Manicure',
+    recurring: 'yes'
   });
 
   Bookings.insert({
-    date: '2014-12-17',
-    time: '7pm',
-    service: 'Pedicure'
+    bookingDate: '12/03/2014',
+    bookingTime: '7pm',
+    service: 'Pedicure',
+    recurring: 'yes'
   });
 
   Bookings.insert({
-    date: '2014-12-17',
-    time: '7pm',
-    service: 'Manicure'
+    bookingDate: '12/03/2014',
+    bookingTime: '7pm',
+    service: 'Manicure',
+    recurring: 'no'
   });
 }

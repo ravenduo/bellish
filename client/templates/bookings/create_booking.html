@@ -1,0 +1,52 @@
+<template name="createBooking">
+  <form class="main form">
+    <div class="form-group">
+      <label class="control-label" for="bookingDate">Select a date</label>
+      <div class="controls">
+          <input type="text" class="datepicker" name="bookingDate" id="bookingDate">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="bookingTime">Select a date</label>
+      <div class="controls">
+          <select id="bookingTime" name="bookingTime" value="" placeholder="Select a time" class="form-control">
+              <option selected disabled>Select a time...</option>
+              <option>9am</option>
+              <option>10am</option>
+              <option>11am</option>
+              <option>12pm</option>
+              <option>1pm</option>
+              <option>2pm</option>
+              <option>3pm</option>
+              <option>4pm</option>
+              <option>4pm</option>
+              <option>5pm</option>
+              <option>7pm</option>
+              <option>8pm</option>
+              <option>9pm</option>
+              <option>10pm</option>            
+          </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="service">Select a service</label>
+      <div class="controls">
+          <select id="service" name="service" value="" placeholder="Select a service" class="form-control">
+              <option selected disabled>Select a service option...</option>
+              <option>Manicure</option>
+              <option>Pedicure</option>
+              <option>Mani/Pedi</option>
+              <option>Brow Wax</option>
+          </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="recurring">Does booking repeat each week?</label>
+      <div class="controls">
+          <input name="recurring" id="recurring" type="radio" value="yes" placeholder="Your URL" class="form-control"/> Yes<br>
+          <input name="recurring" id="recurring" type="radio" value="no" placeholder="Your URL" class="form-control"/> No<br>
+      </div>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+</template>
